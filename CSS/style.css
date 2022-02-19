@@ -1,0 +1,366 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "raleway", sans-serif;
+  line-height: 2;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.boton {
+  display: block;
+  background-color: #8cbc00;
+  padding: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 900;
+  transition: background-color 0.3s ease-out;
+}
+.boton:hover {
+  background-color: #769c02;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover {
+  font-size: 2rem;
+  color: #0000ff;
+}
+.max-width-300 {
+  max-width: 30rem;
+}
+
+/* Titulo Navegacion e Imagen */
+
+.title-h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.span-title-h1 {
+  color: #037bc0;
+}
+.container-nav {
+  border-top: 1px solid #e1e1e1;
+}
+.nav-principal {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 55rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Categorias */
+
+.title-h2 h2 {
+  margin: 5rem 0 2rem 0;
+}
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.listado-categorias img {
+  border-radius: 1rem;
+}
+.listado-categorias img:hover {
+  border: 1px solid #000;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-out;
+}
+.categorias a {
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+}
+.categorias a:hover {
+  background-color: #037bc0;
+  border-bottom-right-radius: 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Sobre Nosotros e Imagen */
+.sobre-nosotros {
+  margin-top: 4rem;
+}
+.container-sobre-nosotros {
+  display: flex;
+  justify-content: end;
+}
+.texto-sobre-nosotros {
+  flex-basis: 50%;
+  padding-left: 7rem;
+  color: #fff;
+}
+.sobre-nosotros {
+  background-image: linear-gradient(to right, transparent 50%, #035bc0 50%),
+    url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100%, 120rem;
+  padding: 10rem 0;
+}
+
+/* Listado Productos */
+
+.producto {
+  background-color: #037bc0;
+  border-radius: 1rem;
+}
+.producto h3 {
+  margin: 0;
+}
+.texto-producto {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+.texto-producto p {
+  margin: 0 0 0.5rem 0;
+}
+.precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.listado-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+/* Agregando Grid a los Productos */
+
+.producto:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img {
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+.producto:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.producto:nth-child(2) img {
+  border-radius: 1rem 1rem 0 0;
+}
+.producto:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.producto:nth-child(3) img {
+  border-radius: 1rem 1rem 0 0;
+}
+.producto:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.producto:nth-child(4) img {
+  border-radius: 1rem 1rem 0 0;
+}
+.producto:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.producto:nth-child(5) img {
+  border-radius: 1rem 1rem 0 0;
+}
+.producto:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.producto:nth-child(6) img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* Pie de Pagina */
+
+.pie-pagina {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.pie-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.pie-container a {
+  display: block;
+}
+.derechos-reservados {
+  margin-top: 5rem;
+}
+
+/* Pagina Nosotros */
+
+.container-nosotros-pag2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(41.4rem, 1fr));
+  gap: 4rem;
+}
+.container-nosotros-pag2 img {
+  border-radius: 1rem;
+}
+.text-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Pagina Blog */
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+.container-blog img {
+  border-radius: 1rem;
+}
+.fecha {
+  display: flex;
+  justify-content: space-between;
+}
+.fecha p {
+  font-weight: 700;
+}
+.container-article {
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #e1e1e1;
+}
+.container-article:last-of-type {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Entrada Blog */
+
+.entrada-blog {
+  width: 60rem;
+  margin: 0 auto;
+}
+.info-entrada p {
+  margin-top: 3rem;
+}
+.entrada-blog img {
+  border-radius: 1rem;
+}
+
+/* Pagina Galeria */
+
+.container-galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.container-galeria img {
+  width: 40rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid #e1e1e1;
+}
+.container-galeria img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}
+
+/* Pagina Contacto */
+
+.formulario {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.formulario fieldset {
+  border: 2px solid #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.formulario legend {
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: #035bc0;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.campo label {
+  flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.5rem;
+}
+.enviar {
+  margin: 0 auto;
+}

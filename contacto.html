@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="title-h1">Tienda <span class="span-title-h1">Muebeles</span></h1>
+  </header>
+
+  <div class="container-nav">
+    <nav class="nav-principal / container">
+      <a class="button" href="index.html">Inicio</a>
+      <a class="button" href="nosotros.html">Nosotros</a>
+      <a class="button" href="tienda.html">Tienda</a>
+      <a class="button" href="blog.html">Blog</a>
+      <a class="button" href="galeria.html">Galeria</a>
+      <a class="button" href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+
+  <main class="container / container-productos">
+
+    <h2 class="text-center">Contacto</h2>
+
+    <form class="formulario">
+      <fieldset>
+        <legend>Tus Datos</legend>
+
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" type="text" placeholder="Tu nombre aqui">
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto:</label>
+          <input id="asunto" type="text" placeholder="Tu asunto aqui">
+        </div>
+
+        <div class="campo">
+          <label for="email">Emai:</label>
+          <input id="email" type="email" placeholder="Tu email aqui">
+        </div>
+
+        <div class="campo">
+          <label for="tel">Telefono:</label>
+          <input id="tel" type="tel" placeholder="Tu numero aqui">
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" cols="20" rows="10"></textarea>
+        </div>
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Tu Pais</legend>
+
+        <div class="campo">
+          <label for="pais">Pais:</label>
+          <select id="pais">
+            <option value="">--selecciona--</option>
+            <option value="MX">Mexico</option>
+            <option value="PR">Peru</option>
+            <option value="CL">Chile</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Informacion Extra</legend>
+
+        <div class="campo">
+          <label for="proveedor">Proveedor:</label>
+          <input type="radio" name="proveedor-cliente" id="proveedor">
+        </div>
+
+        <div class="campo">
+          <label for="cliente">Cliente:</label>
+          <input type="radio" name="proveedor-cliente" id="cliente">
+        </div>
+
+        <div class="campo">
+          <label for="categorias">Categoria de Interes</label>
+          <input list="categoria" id="categorias">
+          <datalist id="categoria">
+            <option value="Cocina">
+            <option value="Exteriores">
+            <option value="Television">
+            <option value="Oficina">
+          </datalist>
+        </div>
+      </fieldset>
+
+      <a class="boton / max-width-300 / enviar" href="">Enviar Formulario</a>
+
+    </form>
+
+  </main>
+
+  <footer class="pie-pagina">
+
+    <div class="container / pie-container">
+      <div>
+        <h3>Categorias</h3>
+        <nav>
+
+          <a class="button" href="">Cocina</a>
+          <a class="button" href="">Oficina</a>
+          <a class="button" href="">Jardin</a>
+          <a class="button" href="">Cochera</a>
+          <a class="button" href="">Dormitorios</a>
+
+        </nav>
+      </div>
+
+      <div>
+        <h3>Sobre Nosotros</h3>
+        <nav>
+
+          <a class="button" href="">Nuestra Historia</a>
+          <a class="button" href="">Mision, Vision y Valores</a>
+          <a class="button" href="">Carreras</a>
+          <a class="button" href="">Politicas de Privacidad</a>
+          <a class="button" href="">Termnios del Servicio</a>
+
+        </nav>
+      </div>
+
+      <div>
+        <h3>Soporte</h3>
+        <nav>
+
+          <a class="button" href="">Preguntas Frecuentes</a>
+          <a class="button" href="">Ayuda en Linea</a>
+          <a class="button" href="">Confianza y Seguridad</a>
+
+        </nav>
+      </div>
+    </div>
+
+
+    <p class="derechos-reservados / text-center">Todos los Derechos Reservados</p>
+
+  </footer>
+
+</body>
+
+</html>
